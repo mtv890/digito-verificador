@@ -36,6 +36,6 @@ function calculateDigits (domain) {
     }
     first = colapseDigits(first);
     second = colapseDigits(second);
-    return "Digito Verificador: " + first + second;
+    return "" + first + second;
 };
 
