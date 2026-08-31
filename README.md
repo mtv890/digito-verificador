@@ -1,7 +1,7 @@
 # Digito Verificador
-Script para calcular el digito verificador de la patente (ARGENTINA)
+Como siempre me olvidaba mi digito verificador cree un script para calcular el digito verificador de la patente (ARGENTINA)
 
 
 ### Instrucciones:
-- Pegar el js en la consola de google chrome
-- calculateDigits("AA000AA") reemplazando por la patente que se desea obtener el codigo verificador
+- Ir a https://mtv890.github.io/digito-verificador/
+- Ingresa patente de la forma AA000AA y click en Calcular
