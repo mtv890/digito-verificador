@@ -55,14 +55,14 @@
     <div id="resultado"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
   <script>
     function procesar() {
       const input = document.getElementById('numero').value;
       
       // Reemplazá 'calcularDigito' por el nombre real de tu función en script.js
-      if (typeof calcularDigito === 'function') {
+      if (typeof calculateDigits === 'function') {
         const res = calcularDigito(input);
         document.getElementById('resultado').innerText = `Resultado: ${res}`;
       } else {
