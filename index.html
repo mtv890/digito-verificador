@@ -61,9 +61,8 @@
     function procesar() {
       const input = document.getElementById('numero').value;
       
-      // Reemplazá 'calcularDigito' por el nombre real de tu función en script.js
       if (typeof calculateDigits === 'function') {
-        const res = calcularDigito(input);
+        const res = calculateDigits(input);
         document.getElementById('resultado').innerText = `Resultado: ${res}`;
       } else {
         document.getElementById('resultado').innerText = 'Error: Función no encontrada en script.js';
