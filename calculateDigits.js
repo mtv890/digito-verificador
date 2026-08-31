@@ -12,7 +12,7 @@ let colapseDigits = function (num){
  return num;
 }
 
-let calculateDigits = function (domain) {
+function calculateDigits (domain) {
     let map = new Map([
         ['A', '14'], ['B', '01'], ['C', '00'], ['D', '16'], ['E', '05'], ['F', '20'], ['G', '19'], ['H', '09'],
         ['I', '24'], ['J', '07'], ['K', '21'], ['L', '08'], ['M', '04'], ['N', '13'], ['O', '25'], ['P', '22'],
@@ -36,6 +36,6 @@ let calculateDigits = function (domain) {
     }
     first = colapseDigits(first);
     second = colapseDigits(second);
-    console.log("Digito Verificador: " + first + second);
+    return "Digito Verificador: " + first + second;
 };
 
