@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Dígito Verificador</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #0066cc;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0052a3;
+    }
+    #resultado {
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Dígito Verificador</h2>
+    <label for="numero">Ingresá el número:</label>
+    <input type="text" id="numero" placeholder="Ej: 2030000000">
+    <button onclick="procesar()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    function procesar() {
+      const input = document.getElementById('numero').value;
+      
+      // Reemplazá 'calcularDigito' por el nombre real de tu función en script.js
+      if (typeof calcularDigito === 'function') {
+        const res = calcularDigito(input);
+        document.getElementById('resultado').innerText = `Resultado: ${res}`;
+      } else {
+        document.getElementById('resultado').innerText = 'Error: Función no encontrada en script.js';
+      }
+    }
+  </script>
+</body>
+</html>
